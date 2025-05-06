@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: blueviolet;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+.hamburguer{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    justify-content: space-between;
+}
+
+.hamurguer span {
+    height: 4px;
+    background-color:aqua(128, 186, 240);
+    border-radius: 2px;
+}
+
+ul.menu{
+    list-style: none;
+    display: none;
+    display: flex;
+    gap: 20px;
+}
+ul.menu li a {
+    color:blueviolet(253,60, 150)
+    text-decoration: none;
+}
