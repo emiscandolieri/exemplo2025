@@ -5,7 +5,7 @@
 }
 
 nav{
-    background-color: blueviolet;
+    background-color: rgba(214, 169, 255, 0.863);
     padding: 10px 20px;
     position: relative;
 }
@@ -25,7 +25,7 @@ nav{
 
 .hamurguer span {
     height: 4px;
-    background-color:aqua(128, 186, 240);
+    background-color:rgba(160, 80, 235, 0.993)
     border-radius: 2px;
 }
 
