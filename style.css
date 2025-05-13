@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+ font-family: arial,sans-serif;
 
 nav{
     background-color: rgba(214, 169, 255, 0.863);
@@ -41,8 +43,35 @@ ul.menu li a {
     text-decoration: none;
 }
 
-h1 {
+h1{
     align-items: center;
-    justify-content: space space-between;
-    background-color: #db4e4efa;
+    text-align: center;
+    color: aliceblue;
+}
+
+/*responsivo*/
+    @media(max: width 768px;){
+    .hamburguer
+    display: flex;
+
+}
+
+ul: .menu; {
+    display: none;
+    flex-direction: column;
+    blackground: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%
+}
+
+  .menu-toggle:checked
+  +.hamburguer+ul.menu{
+
+    disply:flex;
+
+  }
+}
+    
 
