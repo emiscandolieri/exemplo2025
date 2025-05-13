@@ -35,7 +35,14 @@ ul.menu{
     display: flex;
     gap: 20px;
 }
+
 ul.menu li a {
     color:blueviolet(253,60, 150)
     text-decoration: none;
 }
+
+h1 {
+    align-items: center;
+    justify-content: space space-between;
+    background-color: #db4e4efa;
+
