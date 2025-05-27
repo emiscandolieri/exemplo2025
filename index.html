@@ -1,126 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exemplo2025</title>
-    <link rel="stylesheet" href="style.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cultura: Campo vs Cidade</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #4caf50;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    section {
+      padding: 20px;
+      background-color: white;
+      margin: 20px auto;
+      max-width: 1000px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2e7d32;
+    }
+    footer {
+      text-align: center;
+      background-color: #2e7d32;
+      color: white;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <input type="checkbox" id="menu-toggle" class="menu toggle">
-        <label for="menu toggle" class="hambuerguer">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <ul class="menu">
-            <li><a href="#">inicio</a></li>
-            <li><a href="#">sobre</a></li>
-            <li><a href="#">serviços</a></li>
-            <li><a href="#">contato</a></li>
-        </ul>
 
-    </ul class="Diferentes culturas entre a cidade e o campo?">
-<h1>Diferentes culturas entre a cidade e o campo</h1>
-<img src="" alt="">
+  <header>
+    <h1>Diversidade Cultural: Campo e Cidade</h1>
+    <p>Explorando as diferenças e riquezas culturais desses dois mundos</p>
+  </header>
 
-        </ul
+  <nav>
+    <a href="#campo">Cultura do Campo</a>
+    <a href="#cidade">Cultura da Cidade</a>
+    <a href="#comparacao">Comparação</a>
+  </nav>
 
-    <nav>"
-</body>
-</html>                                
+  <section id="campo">
+    <h2>Cultura do Campo</h2>
+    <p>No campo, a cultura está intimamente ligada à natureza, às tradições familiares e ao ritmo das estações. Festas como a festa junina, a colheita e rituais religiosos têm papel importante. As comunidades rurais valorizam a coletividade, a simplicidade e a manutenção de costumes passados de geração em geração.</p>
+  </section>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diferentes Culturas - Cidade x Campo</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Diferentes Culturas entre a Cidade e o Campo</h1>
-    </header>
+  <section id="cidade">
+    <h2>Cultura da Cidade</h2>
+    <p>Na cidade, a cultura é marcada pela diversidade, modernidade e rapidez. A vida urbana proporciona acesso a cinemas, teatros, museus, shows e eventos multiculturais. As cidades são espaços de inovação, mistura de estilos de vida e maior individualismo.</p>
+  </section>
 
-    <section id="cidade">
-        <div class="section-content">
-            <h2>Cultura Urbana</h2>
-            <p>A cidade é um ambiente dinâmico e diverso, onde as pessoas têm um ritmo acelerado e estão imersas em um mundo de tecnologia e inovação. A cultura urbana é marcada pela modernidade e pela convivência entre diferentes culturas e nacionalidades.</p>
-            <img src="cidade.jpg" alt="Cultura urbana" class="image">
-        </div>
-    </section>
+  <section id="comparacao">
+    <h2>Comparação entre Campo e Cidade</h2>
+    <ul>
+      <li><strong>Comunidade:</strong> No campo, há maior proximidade entre os habitantes; na cidade, predominam relações mais impessoais.</li>
+      <li><strong>Estilo de vida:</strong> O campo oferece um ritmo mais calmo e conectado à natureza; a cidade é acelerada e tecnológica.</li>
+      <li><strong>Tradições:</strong> O campo preserva mais costumes e festas populares; a cidade absorve e mistura influências globais.</li>
+      <li><strong>Oportunidades culturais:</strong> A cidade oferece uma variedade maior de atividades culturais modernas.</li>
+    </ul>
+  </section>
 
-    <section id="campo">
-        <div class="section-content">
-            <h2>Cultura Rural</h2>
-            <p>O campo, por outro lado, oferece um estilo de vida mais tranquilo, com forte ligação à natureza e preservação das tradições. A vida no campo é simples, com atividades agrícolas que conectam as pessoas à terra e à sua história.</p>
-            <img src="campo.jpg" alt="Cultura rural" class="image">
-        </div>
-    </section>
+  <footer>
+    <p>&copy; 2025 Cultura Viva - Todos os direitos reservados</p>
+  </footer>
 
-    <footer>
-        <p>&copy; 2025 Diferentes Culturas. Todos os direitos reservados.</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
-import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
-const culturalData = [
-  {
-    title: "Cidade",
-    image: "/images/cidade-alimentacao.jpg",
-    food: "Na cidade, a alimentação é marcada por conveniência, com acesso a restaurantes, fast food e mercados variados. Pratos prontos e delivery são comuns.",
-    habits: "Os hábitos urbanos incluem um estilo de vida acelerado, maior exposição à tecnologia e menor contato com a natureza. O lazer é muitas vezes associado a shoppings, cinemas e vida noturna."
-  },
-  {
-    title: "Campo",
-    image: "/images/campo-alimentacao.jpg",
-    food: "No campo, a alimentação tende a ser mais natural e orgânica. Muitas pessoas cultivam seus próprios alimentos e priorizam produtos frescos e sazonais.",
-    habits: "A vida no campo é mais tranquila e conectada à natureza. Os hábitos incluem mais tempo ao ar livre, participação em atividades comunitárias e menor dependência de tecnologia."
-  }
-];
-
-export default function CulturaCidadeCampo() {
-  return (
-    <div className="p-8 max-w-5xl mx-auto">
-      <h1 className="text-4xl font-bold mb-6 text-center">Cultura: Cidade x Campo</h1>
-      <p className="text-center text-lg mb-10 text-muted-foreground">
-        Explore as diferenças culturais entre a vida na cidade e no campo, focando em alimentação e hábitos cotidianos.
-      </p>
-
-      <Tabs defaultValue="Cidade" className="w-full">
-        <TabsList className="grid grid-cols-2 mb-6">
-          {culturalData.map((item) => (
-            <TabsTrigger key={item.title} value={item.title}>
-              {item.title}
-            </TabsTrigger>
-          ))}
-        </TabsList>
-
-        {culturalData.map((item) => (
-          <TabsContent key={item.title} value={item.title}>
-            <Card className="rounded-2xl shadow-xl">
-              <img
-                src={item.image}
-                alt={`Imagem de alimentação na ${item.title}`}
-                className="w-full h-64 object-cover rounded-t-2xl"
-              />
-              <CardContent className="p-6">
-                <h2 className="text-2xl font-semibold mb-4">Alimentação</h2>
-                <p className="mb-6 text-muted-foreground">{item.food}</p>
-                <h2 className="text-2xl font-semibold mb-4">Hábitos</h2>
-                <p className="text-muted-foreground">{item.habits}</p>
-              </CardContent>
-            </Card>
-          </TabsContent>
-        ))}
-      </Tabs>
-    </div>
-  );
-}
