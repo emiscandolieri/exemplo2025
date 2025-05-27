@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Culturas da Cidade e do Campo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #fef6e4, #f0f0f0);
+      color: #333;
+    }
+
+    header {
+      background-color: #ff5f5f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .section:hover {
+      transform: scale(1.02);
+    }
+
+    .city {
+      background: linear-gradient(135deg, #74ebd5, #acb6e5);
+      color: #1f1f1f;
+    }
+
+    .rural {
+      background: linear-gradient(135deg, #a8e063, #56ab2f);
+      color: #ffffff;
+    }
+
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .section {
+        width: 45%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Culturas da Cidade e do Campo</h1>
+  </header>
+
+  <main class="container">
+    <div class="section city">
+      <div class="icon">🏙️</div>
+      <h2>Cultura Urbana</h2>
+      <p>
+        A vida na cidade é marcada por ritmo acelerado, tecnologia e diversidade cultural.
+        Teatros, cinemas, eventos, transportes e redes sociais moldam a cultura urbana,
+        promovendo inovação, arte e convivência entre diferentes estilos de vida.
+      </p>
+    </div>
+
+    <div class="section rural">
+      <div class="icon">🌾</div>
+      <h2>Cultura Rural</h2>
+      <p>
+        A cultura do campo valoriza a terra, o trabalho agrícola, as festas tradicionais
+        e o contato direto com a natureza. É rica em saberes populares, culinária típica,
+        religiosidade e forte senso de comunidade e respeito ao meio ambiente.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Cultura Viva - Cidade e Campo
+  </footer>
+
+</body>
+</html>
