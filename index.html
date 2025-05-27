@@ -67,3 +67,60 @@
     <script src="script.js"></script>
 </body>
 </html>
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
+const culturalData = [
+  {
+    title: "Cidade",
+    image: "/images/cidade-alimentacao.jpg",
+    food: "Na cidade, a alimentação é marcada por conveniência, com acesso a restaurantes, fast food e mercados variados. Pratos prontos e delivery são comuns.",
+    habits: "Os hábitos urbanos incluem um estilo de vida acelerado, maior exposição à tecnologia e menor contato com a natureza. O lazer é muitas vezes associado a shoppings, cinemas e vida noturna."
+  },
+  {
+    title: "Campo",
+    image: "/images/campo-alimentacao.jpg",
+    food: "No campo, a alimentação tende a ser mais natural e orgânica. Muitas pessoas cultivam seus próprios alimentos e priorizam produtos frescos e sazonais.",
+    habits: "A vida no campo é mais tranquila e conectada à natureza. Os hábitos incluem mais tempo ao ar livre, participação em atividades comunitárias e menor dependência de tecnologia."
+  }
+];
+
+export default function CulturaCidadeCampo() {
+  return (
+    <div className="p-8 max-w-5xl mx-auto">
+      <h1 className="text-4xl font-bold mb-6 text-center">Cultura: Cidade x Campo</h1>
+      <p className="text-center text-lg mb-10 text-muted-foreground">
+        Explore as diferenças culturais entre a vida na cidade e no campo, focando em alimentação e hábitos cotidianos.
+      </p>
+
+      <Tabs defaultValue="Cidade" className="w-full">
+        <TabsList className="grid grid-cols-2 mb-6">
+          {culturalData.map((item) => (
+            <TabsTrigger key={item.title} value={item.title}>
+              {item.title}
+            </TabsTrigger>
+          ))}
+        </TabsList>
+
+        {culturalData.map((item) => (
+          <TabsContent key={item.title} value={item.title}>
+            <Card className="rounded-2xl shadow-xl">
+              <img
+                src={item.image}
+                alt={`Imagem de alimentação na ${item.title}`}
+                className="w-full h-64 object-cover rounded-t-2xl"
+              />
+              <CardContent className="p-6">
+                <h2 className="text-2xl font-semibold mb-4">Alimentação</h2>
+                <p className="mb-6 text-muted-foreground">{item.food}</p>
+                <h2 className="text-2xl font-semibold mb-4">Hábitos</h2>
+                <p className="text-muted-foreground">{item.habits}</p>
+              </CardContent>
+            </Card>
+          </TabsContent>
+        ))}
+      </Tabs>
+    </div>
+  );
+}
