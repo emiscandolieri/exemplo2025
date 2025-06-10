@@ -1,64 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Conexão Campo e Cidade</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
-    <h1>Conexão entre Campo e Cidade</h1>
-    <nav>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#beneficios">Benefícios</a></li>
-        <li><a href="#exemplos">Exemplos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>Conexão Campo e Cidade</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#importancia">Importância</a></li>
+          <li><a href="#exemplos">Exemplos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section id="sobre" class="secao destaque-verde">
-      <h2>O que é essa conexão?</h2>
-      <p>A relação entre o campo e a cidade é fundamental para o desenvolvimento sustentável. Enquanto o campo fornece alimentos, matéria-prima e recursos naturais, a cidade oferece acesso à tecnologia, serviços e mercados.</p>
+    <section id="sobre">
+      <div class="container">
+        <h2>Sobre</h2>
+        <p>A conexão entre o campo e a cidade é uma relação essencial para o desenvolvimento equilibrado da sociedade. Essa interação envolve o transporte de alimentos, o acesso à cultura, a troca de saberes e a valorização das diferenças.</p>
+      </div>
     </section>
 
-    <section id="beneficios" class="secao destaque-amarelo">
-      <h2>Benefícios da Integração</h2>
-      <ul>
-        <li>Distribuição de alimentos mais eficiente</li>
-        <li>Valorização de saberes e culturas tradicionais</li>
-        <li>Melhoria na infraestrutura rural</li>
-        <li>Redução do êxodo rural</li>
-      </ul>
+    <section id="importancia" class="light">
+      <div class="container">
+        <h2>Por que essa conexão é importante?</h2>
+        <ul>
+          <li><strong>Abastecimento:</strong> O campo fornece alimentos e matérias-primas para as cidades.</li>
+          <li><strong>Desenvolvimento:</strong> A cidade oferece tecnologia e infraestrutura para o campo.</li>
+          <li><strong>Equilíbrio:</strong> Reduz o êxodo rural e melhora a qualidade de vida de ambos.</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="exemplos" class="secao destaque-azul">
-      <h2>Exemplos de Conexão</h2>
-      <p>Feiras de produtos orgânicos nas cidades, turismo rural, programas de educação agrícola e políticas de incentivo à produção local são formas concretas de integrar campo e cidade.</p>
-      <img src="https://via.placeholder.com/600x300?text=Campo+e+Cidade+Juntos" alt="Campo e cidade juntos">
+    <section id="exemplos">
+      <div class="container">
+        <h2>Exemplos de Integração</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Feiras Orgânicas</h3>
+            <p>Produtores rurais vendem diretamente seus produtos nas cidades.</p>
+          </div>
+          <div class="card">
+            <h3>Turismo Rural</h3>
+            <p>Cidadãos conhecem e vivenciam a vida no campo.</p>
+          </div>
+          <div class="card">
+            <h3>Educação Compartilhada</h3>
+            <p>Projetos escolares que integram saberes do campo e da cidade.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contato" class="secao destaque-laranja">
-      <h2>Fale Conosco</h2>
-      <form onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');">
-        <label>Nome:<br><input type="text" required></label><br>
-        <label>Email:<br><input type="email" required></label><br>
-        <label>Mensagem:<br><textarea rows="5" required></textarea></label><br>
-        <button type="submit">Enviar</button>
-      </form>
+    <section id="contato" class="light">
+      <div class="container">
+        <h2>Entre em Contato</h2>
+        <form onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!')">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" rows="4" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Conexão Campo e Cidade. Todos os direitos reservados.</p>
+    <div class="container">
+      <p>&copy; 2025 Conexão Campo e Cidade - Todos os direitos reservados.</p>
+    </div>
   </footer>
 
 </body>
 </html>
+
 
 
   
