@@ -1,93 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cultura do Campo e da Cidade</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conexão Campo e Cidade</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
-    <h1>Cultura do Campo e da Cidade</h1>
-    <p>Conheça as diferentes formas de viver, trabalhar e se relacionar nos meios rural e urbano.</p>
+    <h1>Conexão entre Campo e Cidade</h1>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#beneficios">Benefícios</a></li>
+        <li><a href="#exemplos">Exemplos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#campo">Campo</a>
-    <a href="#cidade">Cidade</a>
-    <a href="#comparacao">Comparação</a>
-    <a href="#galeria">Galeria</a>
-    <a href="#contato">Contato</a>
-  </nav>
+  <main>
+    <section id="sobre" class="secao destaque-verde">
+      <h2>O que é essa conexão?</h2>
+      <p>A relação entre o campo e a cidade é fundamental para o desenvolvimento sustentável. Enquanto o campo fornece alimentos, matéria-prima e recursos naturais, a cidade oferece acesso à tecnologia, serviços e mercados.</p>
+    </section>
 
-  <section id="campo">
-    <h2 class="section-title">Cultura do Campo</h2>
-    <p>A cultura do campo é marcada pela conexão com a terra, os ciclos da natureza e uma vida mais simples e comunitária. Festas como a Festa Junina e celebrações religiosas são comuns, assim como o trabalho com agricultura e pecuária.</p>
-    <p>Comidas típicas, como pamonha, curau e bolo de milho, fazem parte do cotidiano. Além disso, o saber tradicional é valorizado, com práticas passadas de geração em geração.</p>
-  </section>
+    <section id="beneficios" class="secao destaque-amarelo">
+      <h2>Benefícios da Integração</h2>
+      <ul>
+        <li>Distribuição de alimentos mais eficiente</li>
+        <li>Valorização de saberes e culturas tradicionais</li>
+        <li>Melhoria na infraestrutura rural</li>
+        <li>Redução do êxodo rural</li>
+      </ul>
+    </section>
 
-  <section id="cidade">
-    <h2 class="section-title">Cultura da Cidade</h2>
-    <p>Nas cidades, a cultura é marcada pela diversidade, pelo ritmo acelerado e pelo consumo de bens culturais variados, como cinema, teatro e exposições. O acesso à tecnologia, à informação e à mobilidade é maior.</p>
-    <p>Festas urbanas, como o Carnaval e eventos culturais em centros culturais, marcam a vida nas metrópoles. A culinária é variada, com influências do mundo todo.</p>
-  </section>
+    <section id="exemplos" class="secao destaque-azul">
+      <h2>Exemplos de Conexão</h2>
+      <p>Feiras de produtos orgânicos nas cidades, turismo rural, programas de educação agrícola e políticas de incentivo à produção local são formas concretas de integrar campo e cidade.</p>
+      <img src="https://via.placeholder.com/600x300?text=Campo+e+Cidade+Juntos" alt="Campo e cidade juntos">
+    </section>
 
-  <section id="comparacao">
-    <h2 class="section-title">Comparação entre Campo e Cidade</h2>
-    <div class="comparison">
-      <div>
-        <h3>Campo</h3>
-        <ul>
-          <li>Vida mais tranquila</li>
-          <li>Contato com a natureza</li>
-          <li>Trabalho manual</li>
-          <li>Comunidade mais próxima</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Cidade</h3>
-        <ul>
-          <li>Ritmo acelerado</li>
-          <li>Diversidade cultural</li>
-          <li>Mais oportunidades de emprego</li>
-          <li>Maior acesso à saúde e educação</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="galeria">
-    <h2 class="section-title">Galeria</h2>
-    <div class="gallery">
-      <img src="https://via.placeholder.com/300x200?text=Campo" alt="Imagem do campo">
-      <img src="https://via.placeholder.com/300x200?text=Cidade" alt="Imagem da cidade">
-    </div>
-  </section>
-
-  <section id="contato">
-    <h2 class="section-title">Contato</h2>
-    <p>Entre em contato para saber mais sobre projetos educacionais ou culturais envolvendo a vida no campo e na cidade.</p>
-    <form onsubmit="handleForm(event)">
-      <label>Nome:<br><input type="text" name="nome" required /></label><br><br>
-      <label>Email:<br><input type="email" name="email" required /></label><br><br>
-      <label>Mensagem:<br><textarea name="mensagem" rows="5" required></textarea></label><br><br>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+    <section id="contato" class="secao destaque-laranja">
+      <h2>Fale Conosco</h2>
+      <form onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');">
+        <label>Nome:<br><input type="text" required></label><br>
+        <label>Email:<br><input type="email" required></label><br>
+        <label>Mensagem:<br><textarea rows="5" required></textarea></label><br>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Cultura do Campo e da Cidade - Todos os direitos reservados</p>
+    <p>&copy; 2025 Conexão Campo e Cidade. Todos os direitos reservados.</p>
   </footer>
-
-  <script>
-    function handleForm(event) {
-      event.preventDefault();
-      alert('Mensagem enviada com sucesso!');
-    }
-  </script>
 
 </body>
 </html>
+
 
   
